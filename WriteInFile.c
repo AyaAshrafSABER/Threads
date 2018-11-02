@@ -45,7 +45,7 @@ void sortedArrayOutPutFile(char* fileName, arr* arr){
         fprintf(out_file, "%d\t", arr->data[i]);
         printf("%d ", arr->data[i]);
     }
-    fprintf(out_file, "%d]", arr->data[len-1]);
-    printf("%d" ,arr->data[len-1]);
+    fprintf(out_file, "%d]\n", arr->data[len-1]);
+    printf("%d \n" ,arr->data[len-1]);
     fclose(out_file);
 }
