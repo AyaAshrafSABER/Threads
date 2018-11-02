@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/aya/CLionProjects/Threads/ReadFromFile.c
+ReadFromFile.h
+/home/aya/CLionProjects/Threads/ReadFromFile.h
+
+/home/aya/CLionProjects/Threads/ReadFromFile.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+

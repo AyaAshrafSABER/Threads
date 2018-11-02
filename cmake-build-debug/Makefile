@@ -123,32 +123,140 @@ Thread/fast:
 	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/build
 .PHONY : Thread/fast
 
-main.o: main.cpp.o
+MatrixMultiplication.o: MatrixMultiplication.c.o
+
+.PHONY : MatrixMultiplication.o
+
+# target to build an object file
+MatrixMultiplication.c.o:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/MatrixMultiplication.c.o
+.PHONY : MatrixMultiplication.c.o
+
+MatrixMultiplication.i: MatrixMultiplication.c.i
+
+.PHONY : MatrixMultiplication.i
+
+# target to preprocess a source file
+MatrixMultiplication.c.i:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/MatrixMultiplication.c.i
+.PHONY : MatrixMultiplication.c.i
+
+MatrixMultiplication.s: MatrixMultiplication.c.s
+
+.PHONY : MatrixMultiplication.s
+
+# target to generate assembly for a file
+MatrixMultiplication.c.s:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/MatrixMultiplication.c.s
+.PHONY : MatrixMultiplication.c.s
+
+MergeSort.o: MergeSort.c.o
+
+.PHONY : MergeSort.o
+
+# target to build an object file
+MergeSort.c.o:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/MergeSort.c.o
+.PHONY : MergeSort.c.o
+
+MergeSort.i: MergeSort.c.i
+
+.PHONY : MergeSort.i
+
+# target to preprocess a source file
+MergeSort.c.i:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/MergeSort.c.i
+.PHONY : MergeSort.c.i
+
+MergeSort.s: MergeSort.c.s
+
+.PHONY : MergeSort.s
+
+# target to generate assembly for a file
+MergeSort.c.s:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/MergeSort.c.s
+.PHONY : MergeSort.c.s
+
+ReadFromFile.o: ReadFromFile.c.o
+
+.PHONY : ReadFromFile.o
+
+# target to build an object file
+ReadFromFile.c.o:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/ReadFromFile.c.o
+.PHONY : ReadFromFile.c.o
+
+ReadFromFile.i: ReadFromFile.c.i
+
+.PHONY : ReadFromFile.i
+
+# target to preprocess a source file
+ReadFromFile.c.i:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/ReadFromFile.c.i
+.PHONY : ReadFromFile.c.i
+
+ReadFromFile.s: ReadFromFile.c.s
+
+.PHONY : ReadFromFile.s
+
+# target to generate assembly for a file
+ReadFromFile.c.s:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/ReadFromFile.c.s
+.PHONY : ReadFromFile.c.s
+
+WriteInFile.o: WriteInFile.c.o
+
+.PHONY : WriteInFile.o
+
+# target to build an object file
+WriteInFile.c.o:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/WriteInFile.c.o
+.PHONY : WriteInFile.c.o
+
+WriteInFile.i: WriteInFile.c.i
+
+.PHONY : WriteInFile.i
+
+# target to preprocess a source file
+WriteInFile.c.i:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/WriteInFile.c.i
+.PHONY : WriteInFile.c.i
+
+WriteInFile.s: WriteInFile.c.s
+
+.PHONY : WriteInFile.s
+
+# target to generate assembly for a file
+WriteInFile.c.s:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/WriteInFile.c.s
+.PHONY : WriteInFile.c.s
+
+main.o: main.c.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/main.c.o
+.PHONY : main.c.o
 
-main.i: main.cpp.i
+main.i: main.c.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/main.c.i
+.PHONY : main.c.i
 
-main.s: main.cpp.s
+main.s: main.c.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/Thread.dir/build.make CMakeFiles/Thread.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -159,6 +267,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Thread"
+	@echo "... MatrixMultiplication.o"
+	@echo "... MatrixMultiplication.i"
+	@echo "... MatrixMultiplication.s"
+	@echo "... MergeSort.o"
+	@echo "... MergeSort.i"
+	@echo "... MergeSort.s"
+	@echo "... ReadFromFile.o"
+	@echo "... ReadFromFile.i"
+	@echo "... ReadFromFile.s"
+	@echo "... WriteInFile.o"
+	@echo "... WriteInFile.i"
+	@echo "... WriteInFile.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -6,7 +6,25 @@
 
 #IncludeRegexTransform: 
 
+/home/aya/CLionProjects/Threads/MatrixMultiplication.cpp
+MatrixMultiplication.h
+/home/aya/CLionProjects/Threads/MatrixMultiplication.h
+
+/home/aya/CLionProjects/Threads/MatrixMultiplication.h
+
+/home/aya/CLionProjects/Threads/MergeSort.cpp
+MergeSort.h
+/home/aya/CLionProjects/Threads/MergeSort.h
+
+/home/aya/CLionProjects/Threads/MergeSort.h
+pthread.h
+-
+
 /home/aya/CLionProjects/Threads/main.cpp
-iostream
+stdio.h
+-
+stdlib.h
+-
+pthread.h
 -
 

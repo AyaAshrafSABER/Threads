@@ -57,30 +57,90 @@ include CMakeFiles/Thread.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Thread.dir/flags.make
 
-CMakeFiles/Thread.dir/main.cpp.o: CMakeFiles/Thread.dir/flags.make
-CMakeFiles/Thread.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Thread.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Thread.dir/main.cpp.o -c /home/aya/CLionProjects/Threads/main.cpp
+CMakeFiles/Thread.dir/main.c.o: CMakeFiles/Thread.dir/flags.make
+CMakeFiles/Thread.dir/main.c.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Thread.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Thread.dir/main.c.o   -c /home/aya/CLionProjects/Threads/main.c
 
-CMakeFiles/Thread.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Thread.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aya/CLionProjects/Threads/main.cpp > CMakeFiles/Thread.dir/main.cpp.i
+CMakeFiles/Thread.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Thread.dir/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aya/CLionProjects/Threads/main.c > CMakeFiles/Thread.dir/main.c.i
 
-CMakeFiles/Thread.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Thread.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aya/CLionProjects/Threads/main.cpp -o CMakeFiles/Thread.dir/main.cpp.s
+CMakeFiles/Thread.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Thread.dir/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aya/CLionProjects/Threads/main.c -o CMakeFiles/Thread.dir/main.c.s
+
+CMakeFiles/Thread.dir/MergeSort.c.o: CMakeFiles/Thread.dir/flags.make
+CMakeFiles/Thread.dir/MergeSort.c.o: ../MergeSort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Thread.dir/MergeSort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Thread.dir/MergeSort.c.o   -c /home/aya/CLionProjects/Threads/MergeSort.c
+
+CMakeFiles/Thread.dir/MergeSort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Thread.dir/MergeSort.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aya/CLionProjects/Threads/MergeSort.c > CMakeFiles/Thread.dir/MergeSort.c.i
+
+CMakeFiles/Thread.dir/MergeSort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Thread.dir/MergeSort.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aya/CLionProjects/Threads/MergeSort.c -o CMakeFiles/Thread.dir/MergeSort.c.s
+
+CMakeFiles/Thread.dir/MatrixMultiplication.c.o: CMakeFiles/Thread.dir/flags.make
+CMakeFiles/Thread.dir/MatrixMultiplication.c.o: ../MatrixMultiplication.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Thread.dir/MatrixMultiplication.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Thread.dir/MatrixMultiplication.c.o   -c /home/aya/CLionProjects/Threads/MatrixMultiplication.c
+
+CMakeFiles/Thread.dir/MatrixMultiplication.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Thread.dir/MatrixMultiplication.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aya/CLionProjects/Threads/MatrixMultiplication.c > CMakeFiles/Thread.dir/MatrixMultiplication.c.i
+
+CMakeFiles/Thread.dir/MatrixMultiplication.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Thread.dir/MatrixMultiplication.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aya/CLionProjects/Threads/MatrixMultiplication.c -o CMakeFiles/Thread.dir/MatrixMultiplication.c.s
+
+CMakeFiles/Thread.dir/ReadFromFile.c.o: CMakeFiles/Thread.dir/flags.make
+CMakeFiles/Thread.dir/ReadFromFile.c.o: ../ReadFromFile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Thread.dir/ReadFromFile.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Thread.dir/ReadFromFile.c.o   -c /home/aya/CLionProjects/Threads/ReadFromFile.c
+
+CMakeFiles/Thread.dir/ReadFromFile.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Thread.dir/ReadFromFile.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aya/CLionProjects/Threads/ReadFromFile.c > CMakeFiles/Thread.dir/ReadFromFile.c.i
+
+CMakeFiles/Thread.dir/ReadFromFile.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Thread.dir/ReadFromFile.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aya/CLionProjects/Threads/ReadFromFile.c -o CMakeFiles/Thread.dir/ReadFromFile.c.s
+
+CMakeFiles/Thread.dir/WriteInFile.c.o: CMakeFiles/Thread.dir/flags.make
+CMakeFiles/Thread.dir/WriteInFile.c.o: ../WriteInFile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Thread.dir/WriteInFile.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Thread.dir/WriteInFile.c.o   -c /home/aya/CLionProjects/Threads/WriteInFile.c
+
+CMakeFiles/Thread.dir/WriteInFile.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Thread.dir/WriteInFile.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aya/CLionProjects/Threads/WriteInFile.c > CMakeFiles/Thread.dir/WriteInFile.c.i
+
+CMakeFiles/Thread.dir/WriteInFile.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Thread.dir/WriteInFile.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aya/CLionProjects/Threads/WriteInFile.c -o CMakeFiles/Thread.dir/WriteInFile.c.s
 
 # Object files for target Thread
 Thread_OBJECTS = \
-"CMakeFiles/Thread.dir/main.cpp.o"
+"CMakeFiles/Thread.dir/main.c.o" \
+"CMakeFiles/Thread.dir/MergeSort.c.o" \
+"CMakeFiles/Thread.dir/MatrixMultiplication.c.o" \
+"CMakeFiles/Thread.dir/ReadFromFile.c.o" \
+"CMakeFiles/Thread.dir/WriteInFile.c.o"
 
 # External object files for target Thread
 Thread_EXTERNAL_OBJECTS =
 
-Thread: CMakeFiles/Thread.dir/main.cpp.o
+Thread: CMakeFiles/Thread.dir/main.c.o
+Thread: CMakeFiles/Thread.dir/MergeSort.c.o
+Thread: CMakeFiles/Thread.dir/MatrixMultiplication.c.o
+Thread: CMakeFiles/Thread.dir/ReadFromFile.c.o
+Thread: CMakeFiles/Thread.dir/WriteInFile.c.o
 Thread: CMakeFiles/Thread.dir/build.make
 Thread: CMakeFiles/Thread.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aya/CLionProjects/Threads/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Thread"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Thread.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

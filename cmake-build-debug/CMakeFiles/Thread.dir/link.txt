@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Thread.dir/main.cpp.o  -o Thread 
+/usr/bin/cc -g   CMakeFiles/Thread.dir/main.c.o CMakeFiles/Thread.dir/MergeSort.c.o CMakeFiles/Thread.dir/MatrixMultiplication.c.o CMakeFiles/Thread.dir/ReadFromFile.c.o CMakeFiles/Thread.dir/WriteInFile.c.o  -o Thread 

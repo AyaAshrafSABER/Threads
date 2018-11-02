@@ -84,7 +84,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/aya/CLionProjects/Threads/main.cpp">
+		<Unit filename="/home/aya/CLionProjects/Threads/MatrixMultiplication.c">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/MatrixMultiplication.h">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/MergeSort.c">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/MergeSort.h">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/ReadFromFile.c">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/ReadFromFile.h">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/WriteInFile.c">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/WriteInFile.h">
+			<Option target="Thread"/>
+		</Unit>
+		<Unit filename="/home/aya/CLionProjects/Threads/main.c">
 			<Option target="Thread"/>
 		</Unit>
 		<Unit filename="/home/aya/CLionProjects/Threads/CMakeLists.txt">
