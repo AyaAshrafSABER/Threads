@@ -12,6 +12,10 @@ typedef struct {
     int cols;
     int **data;
 } matrix;
+typedef struct {
+    int n;
+    int *data;
+} arr;
 
 typedef struct {
      matrix* A;
@@ -19,5 +23,5 @@ typedef struct {
 } matrixes;
 matrix * newMatrix(int rows, int cols, FILE *fp);
 matrixes * readMatrixes(char *fileName);
-int* readUnSortedArray(char* fileName);
+arr* readUnSortedArray(char* fileName);
 #endif //THREADS_READFROMFILE_H

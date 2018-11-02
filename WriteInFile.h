@@ -7,4 +7,5 @@
 #include "MatrixMultiplication.h"
 
 void matrixOutPutFile(char* fileName,  Results* mul);
+void sortedArrayOutPutFile(char* fileName, arr* arr);
 #endif //THREADS_WRITEINFILE_H

@@ -70,7 +70,7 @@ matrixes* readMatrixes(char *fileName){
 
 
 }
-int* readUnSortedArray(char* fileName){
+arr* readUnSortedArray(char* fileName){
 
     FILE *fp;
     fp = fopen(fileName, "r");
@@ -79,17 +79,18 @@ int* readUnSortedArray(char* fileName){
         printf("file could not be opened");
         exit(1);
     }
+    arr * a = (arr*) malloc( sizeof(arr));
     int n;
-
     fscanf(fp,"%d",&n);
-    int * arr = (int *) malloc(n*sizeof(int));
+    a->n = n;
+    printf("%d\n",n);
+    a->data = (int*) malloc( n * sizeof(int));
     for(int i = 0; i < n; i++) {
         int m;
         fscanf(fp,"%d",&m);
-        printf("(%d) = %d\n", i,m);
-        arr[i] = m;
+        a->data[i] = m;
     }
     fclose(fp);
-    return arr;
+    return a;
 
 }

@@ -29,3 +29,23 @@ void matrixOutPutFile(char* fileName,  Results* mul) {
     fclose(out_file);
 
 }
+void sortedArrayOutPutFile(char* fileName, arr* arr){
+    remove(fileName);
+    FILE *out_file = fopen(fileName, "a"); // write only
+    // test for files not existing.
+    if (out_file == NULL)
+    {
+        printf("Error! Could not open file\n");
+        exit(-1); // must include stdlib.h
+    }
+    int len = arr->n;
+    fprintf(out_file, "[%d]\n", len); // write to file
+    fprintf(out_file, "[");
+    for(int i = 0; i < len-1; i++) {
+        fprintf(out_file, "%d\t", arr->data[i]);
+        printf("%d ", arr->data[i]);
+    }
+    fprintf(out_file, "%d]", arr->data[len-1]);
+    printf("%d" ,arr->data[len-1]);
+    fclose(out_file);
+}

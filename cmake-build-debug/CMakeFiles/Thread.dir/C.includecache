@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/aya/CLionProjects/Threads/MatrixMultiplication.c
+MatrixMultiplication.h
+/home/aya/CLionProjects/Threads/MatrixMultiplication.h
+
+/home/aya/CLionProjects/Threads/MatrixMultiplication.h
+ReadFromFile.h
+/home/aya/CLionProjects/Threads/ReadFromFile.h
+time.h
+-
+pthread.h
+-
+
 /home/aya/CLionProjects/Threads/MergeSort.c
 MergeSort.h
 /home/aya/CLionProjects/Threads/MergeSort.h
@@ -13,6 +25,16 @@ MergeSort.h
 /home/aya/CLionProjects/Threads/MergeSort.h
 pthread.h
 -
+stdio.h
+-
+stdlib.h
+-
+ReadFromFile.h
+/home/aya/CLionProjects/Threads/ReadFromFile.h
+
+/home/aya/CLionProjects/Threads/ReadFromFile.c
+ReadFromFile.h
+/home/aya/CLionProjects/Threads/ReadFromFile.h
 
 /home/aya/CLionProjects/Threads/ReadFromFile.h
 stdio.h
@@ -22,6 +44,14 @@ stdlib.h
 string.h
 -
 
+/home/aya/CLionProjects/Threads/WriteInFile.c
+WriteInFile.h
+/home/aya/CLionProjects/Threads/WriteInFile.h
+
+/home/aya/CLionProjects/Threads/WriteInFile.h
+MatrixMultiplication.h
+/home/aya/CLionProjects/Threads/MatrixMultiplication.h
+
 /home/aya/CLionProjects/Threads/main.c
 stdio.h
 -
@@ -29,6 +59,14 @@ stdlib.h
 -
 pthread.h
 -
+string.h
+-
 ReadFromFile.h
 /home/aya/CLionProjects/Threads/ReadFromFile.h
+MatrixMultiplication.h
+/home/aya/CLionProjects/Threads/MatrixMultiplication.h
+MergeSort.h
+/home/aya/CLionProjects/Threads/MergeSort.h
+WriteInFile.h
+/home/aya/CLionProjects/Threads/WriteInFile.h
 

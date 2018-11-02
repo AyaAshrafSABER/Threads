@@ -22,8 +22,9 @@ int main(int argc, char **argv) {
 
         } else {
             printf("You are in Merge Sort mode \n");
-            int* arr = readUnSortedArray("input.txt");
-            //sort(arr);
+            arr* a = readUnSortedArray("input.txt");
+            sort(a);
+            sortedArrayOutPutFile("output.txt",a);
         }
     }
 }

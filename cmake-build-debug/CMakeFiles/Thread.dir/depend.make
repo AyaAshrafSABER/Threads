@@ -3,16 +3,23 @@
 
 CMakeFiles/Thread.dir/MatrixMultiplication.c.o: ../MatrixMultiplication.c
 CMakeFiles/Thread.dir/MatrixMultiplication.c.o: ../MatrixMultiplication.h
+CMakeFiles/Thread.dir/MatrixMultiplication.c.o: ../ReadFromFile.h
 
 CMakeFiles/Thread.dir/MergeSort.c.o: ../MergeSort.c
 CMakeFiles/Thread.dir/MergeSort.c.o: ../MergeSort.h
+CMakeFiles/Thread.dir/MergeSort.c.o: ../ReadFromFile.h
 
 CMakeFiles/Thread.dir/ReadFromFile.c.o: ../ReadFromFile.c
 CMakeFiles/Thread.dir/ReadFromFile.c.o: ../ReadFromFile.h
 
+CMakeFiles/Thread.dir/WriteInFile.c.o: ../MatrixMultiplication.h
+CMakeFiles/Thread.dir/WriteInFile.c.o: ../ReadFromFile.h
 CMakeFiles/Thread.dir/WriteInFile.c.o: ../WriteInFile.c
 CMakeFiles/Thread.dir/WriteInFile.c.o: ../WriteInFile.h
 
+CMakeFiles/Thread.dir/main.c.o: ../MatrixMultiplication.h
+CMakeFiles/Thread.dir/main.c.o: ../MergeSort.h
 CMakeFiles/Thread.dir/main.c.o: ../ReadFromFile.h
+CMakeFiles/Thread.dir/main.c.o: ../WriteInFile.h
 CMakeFiles/Thread.dir/main.c.o: ../main.c
 
