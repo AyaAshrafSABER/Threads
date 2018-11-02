@@ -1,26 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include <string.h>
 #include "ReadFromFile.h"
+#include "MatrixMultiplication.h"
+#include "MergeSort.h"
+#include "WriteInFile.h"
 
 #define NUM_THREADS 2
 
-/* create thread argument struct for thr_func() */
-typedef struct _thread_data_t {
-    int tid;
-    double stuff;
-} thread_data_t;
-
-/* thread function */
-void *thr_func(void *arg) {
-    thread_data_t *data = (thread_data_t *)arg;
-
-    printf("hello from thr_func, thread id: %d\n", data->tid);
-
-    pthread_exit(NULL);
-}
 
 int main(int argc, char **argv) {
-    matrixes * data  =readMatrixes("input.txt");
-    int* arr = readUnSortedArray("input.txt");
+    if (argc < 2) {
+        printf("Try to enter argument to intialize the correct mode");
+    } else {
+        if (strcmp(argv[1],"1") == 0) {
+            printf("You are on matrix mode\n");
+            matrixes * data  =readMatrixes("input.txt");
+            Results* mul = matrixMultiplication(data);
+            matrixOutPutFile("output.txt", mul);
+
+        } else {
+            printf("You are in Merge Sort mode \n");
+            int* arr = readUnSortedArray("input.txt");
+            //sort(arr);
+        }
+    }
 }

@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/aya/CLionProjects/Threads/ReadFromFile.c
-ReadFromFile.h
-/home/aya/CLionProjects/Threads/ReadFromFile.h
+/home/aya/CLionProjects/Threads/MergeSort.c
+MergeSort.h
+/home/aya/CLionProjects/Threads/MergeSort.h
+
+/home/aya/CLionProjects/Threads/MergeSort.h
+pthread.h
+-
 
 /home/aya/CLionProjects/Threads/ReadFromFile.h
 stdio.h
@@ -17,4 +21,14 @@ stdlib.h
 -
 string.h
 -
+
+/home/aya/CLionProjects/Threads/main.c
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+ReadFromFile.h
+/home/aya/CLionProjects/Threads/ReadFromFile.h
 

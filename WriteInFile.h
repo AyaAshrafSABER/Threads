@@ -4,5 +4,7 @@
 
 #ifndef THREADS_WRITEINFILE_H
 #define THREADS_WRITEINFILE_H
+#include "MatrixMultiplication.h"
 
+void matrixOutPutFile(char* fileName,  Results* mul);
 #endif //THREADS_WRITEINFILE_H
