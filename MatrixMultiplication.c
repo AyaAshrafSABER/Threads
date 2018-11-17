@@ -33,55 +33,60 @@ void *rowMethod(void *arg) {
 
 
 Results* matrixMultiplication(matrixes * m){
-    matrixResult * res1 = intializeMR(m);
-    pthread_t thr[m->A->rows][m->B->cols];
-    int i, rc;
-    /* create a thread_data_t argument array */
-    thread_data_t thr_data[m->A->rows][m->B->cols];
-    clock_t t1, t2;
-    t1 = clock();
-    /* create threads */
-    for (i = 0; i < m->A->rows ; ++i) {
-        for(int j = 0; j < m->B->cols; ++j) {
-            thr_data[i][j].tid = i+j;
-            thr_data[i][j].i = i; //a row
-            thr_data[i][j].j = j; //b cloumn
-            thr_data[i][j].result = res1;
-            thr_data[i][j].m = m;
-            pthread_create(&thr[i][j], NULL, elementMethod, &thr_data[i][j]);
+    if (m->A->cols == m->B->rows) {
+        matrixResult *res1 = intializeMR(m);
+        pthread_t thr[m->A->rows][m->B->cols];
+        int i, rc;
+        /* create a thread_data_t argument array */
+        thread_data_t thr_data[m->A->rows][m->B->cols];
+        clock_t t1, t2;
+        t1 = clock();
+        /* create threads */
+        for (i = 0; i < m->A->rows; ++i) {
+            for (int j = 0; j < m->B->cols; ++j) {
+                thr_data[i][j].tid = i + j;
+                thr_data[i][j].i = i; //a row
+                thr_data[i][j].j = j; //b cloumn
+                thr_data[i][j].result = res1;
+                thr_data[i][j].m = m;
+                pthread_create(&thr[i][j], NULL, elementMethod, &thr_data[i][j]);
+            }
         }
-    }
-    /* block until all threads complete */
-    for (i = 0; i < m->A->rows ; ++i) {
-        for (int j = 0; j < m->B->cols; ++j) {
-            pthread_join(thr[i][j], NULL);
+        /* block until all threads complete */
+        for (i = 0; i < m->A->rows; ++i) {
+            for (int j = 0; j < m->B->cols; ++j) {
+                pthread_join(thr[i][j], NULL);
+            }
         }
-    }
-    t2 =clock();
-    res1->elapsedT = t2 - t1;
-    //method 2
-    matrixResult * res2 = intializeMR(m);
-    pthread_t thr2[m->A->rows];
-    thread_data_t thr_data2[m->A->rows];
-    t1 = clock();
-    for (i = 0; i < m->A->rows ; ++i) {
+        t2 = clock();
+        res1->elapsedT = t2 - t1;
+        //method 2
+        matrixResult *res2 = intializeMR(m);
+        pthread_t thr2[m->A->rows];
+        thread_data_t thr_data2[m->A->rows];
+        t1 = clock();
+        for (i = 0; i < m->A->rows; ++i) {
             thr_data2[i].tid = i;
             thr_data2[i].i = i; //a row
             thr_data2[i].j = 0; //b cloumn
             thr_data2[i].result = res2;
             thr_data2[i].m = m;
             pthread_create(&thr2[i], NULL, rowMethod, &thr_data2[i]);
+        }
+        /* block until all threads complete */
+        for (i = 0; i < m->A->rows; ++i) {
+            pthread_join(thr2[i], NULL);
+        }
+        t2 = clock();
+        res2->elapsedT = t2 - t1;
+        Results *r = (Results *) malloc(sizeof(Results));
+        r->method1 = res1;
+        r->method2 = res2;
+        return r;
+    }else{
+        printf("Invalid Dimaensions\n");
+        exit(1);
     }
-    /* block until all threads complete */
-    for (i = 0; i < m->A->rows ; ++i) {
-        pthread_join(thr2[i], NULL);
-    }
-    t2 =clock();
-    res2->elapsedT = t2 - t1;
-    Results* r = (Results *) malloc(sizeof(Results));
-    r->method1 = res1;
-    r->method2 =res2;
-    return r;
 }
 matrixResult* intializeMR (matrixes * m) {
     matrixResult * res1 =(matrixResult *) malloc(sizeof(matrixResult)); //contain the result of element method
